@@ -1,0 +1,56 @@
+type: "SNIPPET_NOTE"
+folder: "6dad9396d0a3f9d57e1c"
+title: "Convert string to number"
+description: '''
+  Convert string to number
+  http://ramemiso.hateblo.jp/entry/2013/09/05/213223
+'''
+snippets: [
+  {
+    name: "stringToNumber.cpp"
+    mode: "C++"
+    content: '''
+      // Use string stream
+      std::string str("10");
+      std::stringstream ss(str);
+      int val;
+      ss >> val;  // 10
+      
+      // Use STL
+      std::string ten("10"), minusTen("-10");
+      int n1 = std::stoi(ten);
+      int n2 = std::stoi(minusTen);
+      
+      // All function
+      int                stoi  (const string& str, size_t* idx = 0, int base = 10);
+      long               stol  (const string& str, size_t* idx = 0, int base = 10);
+      unsigned long      stoul (const string& str, size_t* idx = 0, int base = 10);
+      long long          stoll (const string& str, size_t* idx = 0, int base = 10);
+      unsigned long long stoull(const string& str, size_t* idx = 0, int base = 10);
+      
+      std::string str("10abcd");
+      std::size_t index;
+      
+      // index to store the first position is not number
+      int val = std::stoi(str, &index);	// index = 2
+      
+      // substrで未変換の文字列を取り出してみる
+      std::string newStr = str.substr(index);	// "abcd"
+      
+      // 16進
+      std::string hex0("AB"), hex1("0xAB"), hex2("0XAB");
+      int hexVal0 = std::stoi(hex0, nullptr, 16);	// 171
+      int hexVal1 = std::stoi(hex1, nullptr, 16);	// 171
+      int hexVal2 = std::stoi(hex2, nullptr, 16);	// 171
+      
+      // 8進
+      std::string oct0("23"), oct1("023");
+      int octVal0 = std::stoi(oct0, nullptr, 8);	// 19
+      int octVal1 = std::stoi(oct1, nullptr, 8);	// 19
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-29T13:28:51.811Z"
+updatedAt: "2016-11-29T13:33:17.421Z"

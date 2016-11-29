@@ -5,7 +5,13 @@ content: '''
   Nov 29
   ========
   
-  ## 1. Detect with connected component and fit ellipse
+  ## 1. Detect with connected component
+  
+  * Detect with Topview background substract
+  * Blob extract with connected components and stat
+    * Inside one blob extract to many small blobs with different 3D cluster
+      * Clustering with cv::flann
+  * Ignore small blob ( smaller than minmum area)
   
   ## 2. Start design Association module
   
@@ -20,7 +26,8 @@ content: '''
     
     **Eliipse Distance**
     $$$
-    \\frac{\\alpha}{\\beta}
+      d(\\vec{x}, \\vec{y}) = \\sqrt{\\displaystyle\\sum_{i=1}^{N} \\frac{x_i - y_i}{s_i}}
+      
     $$$
     
     ### Algorithms
@@ -50,4 +57,4 @@ tags: [
 ]
 isStarred: false
 createdAt: "2016-11-29T08:30:27.845Z"
-updatedAt: "2016-11-29T11:19:35.335Z"
+updatedAt: "2016-11-29T14:52:38.575Z"

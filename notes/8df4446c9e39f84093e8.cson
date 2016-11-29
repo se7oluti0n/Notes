@@ -1,0 +1,22 @@
+type: "MARKDOWN_NOTE"
+folder: "eec99ecca9cfb3dd76ea"
+title: "Scipy Segmentation Fault"
+content: '''
+  Scipy Segmentation Fault 
+  ================
+  ## Segmentation fault with `from scipy import misc`
+  Reinstall scipy with conda
+  ```
+  conda install scipy
+  ```
+  ## imread not found `misc.imread`
+  Install Pillow (Python image something)
+  ```
+  pip install Pillow
+  ```
+  
+'''
+tags: []
+isStarred: false
+createdAt: "2016-11-29T11:43:40.376Z"
+updatedAt: "2016-11-29T11:46:21.670Z"

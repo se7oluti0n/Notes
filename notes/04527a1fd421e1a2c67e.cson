@@ -1,0 +1,32 @@
+type: "MARKDOWN_NOTE"
+folder: "14f9c06e2e72c862a17d"
+title: "cv::flann Clustering and Search in Multi-Dimensional Spaces"
+content: '''
+  cv::flann Clustering and Search in Multi-Dimensional Spaces
+  ====
+  ### Opencv Docs: http://docs.opencv.org/3.1.0/dc/de5/group__flann.html#gaf89c8914eb439855c9a24c3de01bfd82
+  ## 1. Hierarchical Clustering
+  
+  ```C++
+  // create the kmeans parameters structure: branching factor = 32, 
+  // number of iterations = 100, choose initial centers by PP-algorithm
+  cv::flann::KMeansIndexParams kmean_params(32, 100, cv::flann::FLANN_CENTERS_KMEANSPP);
+  
+  // create matrix of samples, this matrix you have to fill with your actual points
+  cv::Mat1f samples( number_of_points, 2 );
+  
+  // ... // fill 'samples'-Matrix with your points
+  
+  // create matrix of centers, the specified rows will be kinda the upper limit of clusters
+  // you'll get
+  cv::Mat1f centers( number_of_centers, 2 );
+  // apply hierarchical clustering which returns the true numbers of clusters ( < centers.rows )
+  true_number_clusters = cv::flann::hierarchicalClustering<cv::L2<float> >(samples, centers, kmean_params );
+  // since you get less clusters than you specified we can also truncate our matrix. 
+  centers = centers.rowRange(cv::Range(0,true_number_clusters));
+  ```
+'''
+tags: []
+isStarred: false
+createdAt: "2016-11-29T14:17:40.412Z"
+updatedAt: "2016-11-29T14:57:13.162Z"

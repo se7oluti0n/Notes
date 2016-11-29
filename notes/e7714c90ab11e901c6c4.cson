@@ -5,9 +5,20 @@ content: '''
   Build app to crop Image from scratch with ReactJS, Electron
   =======
   
+  ## 1. User stories
   
+  ### Required
+  * [ ] User can open image file (jpg, png, ...) with file brower dialog
+  * [ ] User can view content in the app window
+  * [ ] User can select ROI inside image using mouse
+  * [ ] User can crop selected ROI
+  * [ ] User can save or save as
+  
+  ### Optional 
+  * [ ] User can zoom-in and zoom-out image 
+  * [ ] User can drag and drop to open file
 '''
 tags: []
 isStarred: false
 createdAt: "2016-11-29T10:11:23.201Z"
-updatedAt: "2016-11-29T10:11:50.107Z"
+updatedAt: "2016-11-29T15:02:03.473Z"

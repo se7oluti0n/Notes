@@ -28,12 +28,27 @@
     {
       "key": "826861ea07f3ac433898",
       "color": "#30D5C8",
-      "name": "Ideas"
+      "name": "App ideas"
     },
     {
       "key": "14f9c06e2e72c862a17d",
       "color": "#B013A4",
       "name": "OpenCV"
+    },
+    {
+      "key": "eec99ecca9cfb3dd76ea",
+      "color": "#B013A4",
+      "name": "Python"
+    },
+    {
+      "key": "8f1c4d04214a3102804c",
+      "color": "#2BA5F7",
+      "name": "New concepts"
+    },
+    {
+      "key": "a3463f65b62cbd1e282c",
+      "color": "#3FD941",
+      "name": "Shell"
     }
   ],
   "version": "1.0"
