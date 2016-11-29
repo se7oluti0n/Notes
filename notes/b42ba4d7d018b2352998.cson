@@ -1,0 +1,12 @@
+type: "MARKDOWN_NOTE"
+folder: "a06a91cd5add30281bc2"
+title: ".gdbrc"
+content: '''
+  .gdbrc
+  ======
+  
+'''
+tags: []
+isStarred: false
+createdAt: "2016-11-29T08:31:39.213Z"
+updatedAt: "2016-11-29T08:31:55.101Z"

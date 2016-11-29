@@ -1,0 +1,40 @@
+{
+  "folders": [
+    {
+      "key": "79dbc9b08a0f14892d7f",
+      "color": "#6AA5E9",
+      "name": "Default"
+    },
+    {
+      "key": "6dad9396d0a3f9d57e1c",
+      "color": "#B013A4",
+      "name": "C++ Tips"
+    },
+    {
+      "key": "ac8a9db237258addf866",
+      "color": "#B013A4",
+      "name": "Daily notes"
+    },
+    {
+      "key": "a06a91cd5add30281bc2",
+      "color": "#E8D252",
+      "name": "Editor"
+    },
+    {
+      "key": "ae84a30012aaf944361a",
+      "color": "#2BA5F7",
+      "name": "Theory"
+    },
+    {
+      "key": "826861ea07f3ac433898",
+      "color": "#30D5C8",
+      "name": "Ideas"
+    },
+    {
+      "key": "14f9c06e2e72c862a17d",
+      "color": "#B013A4",
+      "name": "OpenCV"
+    }
+  ],
+  "version": "1.0"
+}

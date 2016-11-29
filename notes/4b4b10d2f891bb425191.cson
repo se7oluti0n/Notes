@@ -1,0 +1,53 @@
+type: "MARKDOWN_NOTE"
+folder: "ac8a9db237258addf866"
+title: "Nov 29"
+content: '''
+  Nov 29
+  ========
+  
+  ## 1. Detect with connected component and fit ellipse
+  
+  ## 2. Start design Association module
+  
+  ### Module functionality
+  
+    * [ ] Calculate distance to each ellipse
+    * [ ] Assign pixel to ellipse based to distance
+      * blob pixel inside object's ellipse and no conflict belong to that object
+      * blob pixel outside all object is assigned to closest object based on distance
+    * [ ] Update shape and position with assigned pixel
+    * [ ] Identify new objects with blob have no pixel assigned to any object's ellipse
+    
+    **Eliipse Distance**
+    $$$
+    \\frac{\\alpha}{\\beta}
+    $$$
+    
+    ### Algorithms
+    
+    
+    ```
+    Input: blobs, predicted objects
+    
+    For every blob:
+      For every blob pixel:
+        
+        Determine which object pixel belong to
+          * Add object to blob-object array
+            --> blob with no object will create new Object
+          * Add pixel to object-pixel array
+            --> object with no pixel will be deleted or start to count skip-frame, and will be deleted when reach maximum skip-frame
+            --> object with pixel will create shape
+        
+        
+    ```
+    
+  
+'''
+tags: [
+  "Detection"
+  "Association"
+]
+isStarred: false
+createdAt: "2016-11-29T08:30:27.845Z"
+updatedAt: "2016-11-29T11:19:35.335Z"

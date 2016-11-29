@@ -1,0 +1,25 @@
+type: "SNIPPET_NOTE"
+folder: "14f9c06e2e72c862a17d"
+title: "Connected Components with Stats"
+description: "Connected Components with Stats"
+snippets: [
+  {
+    name: "connected_components.cpp"
+    mode: "C++"
+    content: '''
+      numOfLabels = cv::connectedComponentsWithStats(inputCloud, objectsLabels, objectsStats, objectsCentroids);
+      
+      // stats for object 1, cv::ConnectedComponentsTypes
+      
+      int topLeft_x = objectStats[1, CC_STAT_LEFT]
+      int topLeft_t = objectStats[1, CC_STAT_TOP]
+      int topLeft_width = objectStats[1, CC_STAT_WIDTH]
+      int topLeft_height = objectStats[1, CC_STAT_HEIGHT]
+      int topLeft_area = objectStats[1, CC_STAT_AREA]
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-29T10:27:21.757Z"
+updatedAt: "2016-11-29T10:36:17.999Z"

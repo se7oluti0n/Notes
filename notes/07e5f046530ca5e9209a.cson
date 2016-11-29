@@ -1,0 +1,15 @@
+type: "SNIPPET_NOTE"
+folder: "6dad9396d0a3f9d57e1c"
+title: "function variable with lambda"
+description: "function variable with lambda"
+snippets: [
+  {
+    name: "lamda.cpp"
+    mode: "C++"
+    content: "auto add = [](int a, int b) { return a+b; };"
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-29T10:23:41.645Z"
+updatedAt: "2016-11-29T10:24:31.384Z"
