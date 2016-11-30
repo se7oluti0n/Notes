@@ -1,0 +1,57 @@
+type: "MARKDOWN_NOTE"
+folder: "a3463f65b62cbd1e282c"
+title: "SSH through HTTP proxy"
+content: '''
+  SSH through HTTP proxy
+  =====
+  Source:
+  http://www.zeitoun.net/articles/ssh-through-http-proxy/start
+  ## Configure the ssh server
+  The ssh daemon need to listen on 443 port. To accomplish this, just edit this file (on debian system) /etc/ssh/sshd_config and add this line :
+  ```
+  Port 443
+  ```
+  Then restart the daemon
+  ```
+  sudo /etc/init.d/ssh restart
+  ```
+  
+  ## Configure the client
+  
+  ### 1. Install the `connect` software
+  * On Debian system, install `connect-proxy` package using apt-get
+  ```
+  sudo apt-get install connect-proxy
+  ```
+  * On other Linux systems, you have to compile it :
+  ```
+  cd /tmp/
+  wget http://www.meadowy.org/~gotoh/ssh/connect.c
+  gcc connect.c -o connect
+  sudo cp connect /usr/local/bin/ ; chmod +x /usr/local/bin/connect
+  ```
+  
+  2. Config ssh client. Open or create your` ~/.ssh/config file` and add these lines :
+  ```
+  ## Outside of the firewall, with HTTPS proxy
+  Host my-ssh-server-host.net
+    ProxyCommand connect -H proxy.free.fr:3128 %h 443
+  ## Inside the firewall (do not use proxy)
+  Host *
+     ProxyCommand connect %h %p
+  ```
+  3. Then test the connection:
+  ```
+  ssh my-ssh-server-host.net
+  ```
+  ## SSH to another server through the tunnel
+  For example to connect to in ssh github.com :
+  ```
+  Host github.com
+    ProxyCommand=ssh my-ssh-server-host.net "/bin/nc -w1 %h %p"
+  ```
+'''
+tags: []
+isStarred: false
+createdAt: "2016-11-30T08:56:06.776Z"
+updatedAt: "2016-11-30T09:24:28.851Z"
