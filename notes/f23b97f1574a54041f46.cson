@@ -1,0 +1,38 @@
+type: "MARKDOWN_NOTE"
+folder: "6dad9396d0a3f9d57e1c"
+title: "C++ naming convetion"
+content: '''
+  C++ naming convetion
+  ======
+  Source: https://google.github.io/styleguide/cppguide.html#Variable_Names
+  
+  ## 1. Common variable
+  ```C++
+  string table_name;  // OK - uses underscore.
+  string tablename;   // OK - all lowercase.
+  ```
+  ```C++
+  string tableName;   // Bad - mixed case.
+  ````
+  
+  ## 2. Class data members
+  ```C++
+  class TableInfo {
+    ...
+   private:
+    string table_name_;  // OK - underscore at end.
+    string tablename_;   // OK.
+    static Pool<TableInfo>* pool_;  // OK.
+  };
+  ```
+  ## 3. Function Names
+  ```C++
+  AddTableEntry()
+  DeleteUrl()
+  OpenFileOrDie()
+  ```
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-01T11:31:21.497Z"
+updatedAt: "2016-12-01T11:36:06.486Z"

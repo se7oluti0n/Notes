@@ -1,0 +1,43 @@
+type: "MARKDOWN_NOTE"
+folder: "ae84a30012aaf944361a"
+title: "Inception Net Research"
+content: '''
+  Inception Net Research
+  ======================
+  
+  ## Papers
+  **Inception v1** : Going Deeper with Convolutions 
+  https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf
+  
+  **Inception v3** Rethinking the Inception Architecture for Computer Vision
+  https://arxiv.org/pdf/1512.00567v3.pdf
+  
+  Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning
+  https://arxiv.org/pdf/1602.07261v2.pdf
+  
+  An Analysis of Deep Neural Network Models for Practical Applications:
+  https://arxiv.org/abs/1605.07678
+  
+  ## Blogs
+  Pseudofound
+  https://pseudoprofound.wordpress.com/
+  
+  Eugenio Culurciello's blog:
+  https://culurciello.github.io/
+  
+  Neural Network Architectures :
+  https://culurciello.github.io/tech/2016/06/04/nets.html 
+  
+  Andrej Karpathy blog:
+  http://karpathy.github.io/
+  
+  Machine Learning is Fun!:
+  https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471#.ylus0vj7e
+  
+  A Return to Machine Learning
+  https://medium.com/@kcimc/a-return-to-machine-learning-2de3728558eb#.a7qsu0tec
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-02T10:55:41.053Z"
+updatedAt: "2016-12-02T11:58:27.498Z"
