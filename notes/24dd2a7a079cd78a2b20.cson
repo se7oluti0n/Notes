@@ -24,7 +24,7 @@ content: '''
   sudo apt-get install connect-proxy
   ```
   * On other Linux systems, you have to compile it :
-  ```
+  ```bash
   cd /tmp/
   wget http://www.meadowy.org/~gotoh/ssh/connect.c
   gcc connect.c -o connect
@@ -32,7 +32,7 @@ content: '''
   ```
   
   2. Config ssh client. Open or create your` ~/.ssh/config file` and add these lines :
-  ```
+  ```bash
   ## Outside of the firewall, with HTTPS proxy
   Host my-ssh-server-host.net
     ProxyCommand connect -H proxy.free.fr:3128 %h 443
@@ -41,7 +41,7 @@ content: '''
      ProxyCommand connect %h %p
   ```
   3. Then test the connection:
-  ```
+  ```bash
   ssh my-ssh-server-host.net
   ```
   ## SSH to another server through the tunnel
@@ -54,4 +54,4 @@ content: '''
 tags: []
 isStarred: false
 createdAt: "2016-11-30T08:56:06.776Z"
-updatedAt: "2016-11-30T09:24:28.851Z"
+updatedAt: "2016-11-30T11:26:09.777Z"

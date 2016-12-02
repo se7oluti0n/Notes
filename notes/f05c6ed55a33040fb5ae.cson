@@ -1,0 +1,40 @@
+type: "MARKDOWN_NOTE"
+folder: "ac8a9db237258addf866"
+title: "Work on Nov 30"
+content: '''
+  Work on Nov 30
+  ======
+  ## 1. Work with SSH (1.5 h)
+  Refer shell/SSH 
+  ## 2. Tensorflow
+  
+  ### Variables
+  
+  * Variable value is maintained in side a section. 
+  * Every variable change must do inside a session.
+  * Different session store different state of variable
+  
+  ### Name scopes
+  ```Python
+  with tf.name_scope("Scope_A"):
+    a = tf.add(1,2, name="A_add")
+  ```  
+  Tensorflow can automatically detect same operation
+  
+  ##  summaries
+  ```Python
+  tf.scalar_summary
+  tf.merge_all_summaries
+  ```
+  ### 3. Clustering the blob
+  Step:
+  ```pseudo
+   
+    convert 2D blob to 3D points
+   
+  ```
+'''
+tags: []
+isStarred: false
+createdAt: "2016-11-30T09:52:06.680Z"
+updatedAt: "2016-11-30T15:32:26.124Z"
