@@ -1,0 +1,46 @@
+type: "MARKDOWN_NOTE"
+folder: "ae84a30012aaf944361a"
+title: "Inception v1"
+content: '''
+  Inception v1
+  ===================
+  ###   Motivation and Highlevel consideration
+  
+  Cách dễ nhất để tăng performance của Deep Learning đó là tăng kích thước mạng, bao gồm cả số lớp và kích thước của mỗi lớp.
+  Tuy nhiên điều này có 2 nhược điểm
+  
+  * Kích thước lớn hơn thì đồng nghĩa với việc model dễ bị overfitting hơn, đặc biệt khi mà dữ liệu không có nhiều
+  * Đòi hỏi lượng tính toán nhiều hơn
+  
+  Cách cơ bản để giải quyết vấn đề này là dùng ma trận thưa trong kiến trúc mạng.
+  Tuy nhiên phần cứng máy tính hiện nay không phù hợp lắm cho việc tính toán ma trận thưa.
+  
+  Điều này dẫn đến việc thiết kế kiến trúc mạng phải đáp ứng được 2 việc, sử dụng ma trận thưa trên phần cứng máy tính hiện nay.
+  
+  > The main idea of the Inception architecture is to consider
+  > how an optimal local sparse structure of a convolutional vision
+  > network can be approximated and covered by readily
+  > available dense components
+  
+  Ý tưởng chính của kiến trúc Inception là làm thế nào một kiến trúc tối ưu bằng ma trân thưa có thể được xấp xỉ và biểu diễn bởi các thành phần thông thường.
+  
+  What is 1x1 convolution?
+  http://iamaaditya.github.io/2016/03/one-by-one-convolution/
+  https://www.quora.com/How-are-1x1-convolutions-used-for-dimensionality-reduction
+  
+  
+  
+  Udacity explain:
+  https://www.youtube.com/watch?v=VxhSouuSZDY
+  http://vision.princeton.edu/courses/COS598/2015sp/slides/GoogLeNet/2014-10-17_dlrg.pdf
+  http://www.cs.toronto.edu/~guerzhoy/321/lec/W06/convnets.pdf
+  
+  **Khi dùng convolution, thì 1 layer có N feature maps sau khi nhân với 1 kernel kxk thì lại 
+  ra M features map, việc đó diễn ra thế nào**
+  
+  Maybe : khi apply 1 convolution thì sẽ apply cho toàn bộ các layer. Ví dụ đầu vào có 3layer rgb thì sẽ apply kernel cho cả 3 layer đó.
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-04T05:28:03.125Z"
+updatedAt: "2016-12-04T09:03:32.880Z"

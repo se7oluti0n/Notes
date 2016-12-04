@@ -1,0 +1,33 @@
+type: "MARKDOWN_NOTE"
+folder: "ae84a30012aaf944361a"
+title: "Probability"
+content: '''
+  Probability
+  =========
+  
+  **Frequentist probability** : Related directly to the rates of events occur
+  **Bayesian probability** : related to quanlitative level of certainty
+  
+  ### Random variables
+  ### Probability distributions
+  #### Discrete variable and probability mass function
+  #### Continous variables and probability density functions
+  
+  ### Marginal probability
+   Phân bố xác suất của một tập con được gọi là  **Marginal probability distribution**
+   
+   Ví dụ ta có phân bố xs $$P(x,y)$$ của 2 biến ngẫu nhiên rời rạc $$x$$ và $$y$$, khi đó tìm $$P(x)$$ với *luật cộng*:
+   $$$
+  \\forall x \\in X, P(x=x) = \\sum_y P(x=x, y=y)
+   $$$
+   
+   **Bernoulli distribution** : phân bố của biến rời rạc chỉ có 2 trạng thái (0, 1)
+   ![](https://www.probabilitycourse.com/images/chapter3/bernoulli(p)%20color.png)
+   **Laplace distribution** 
+   ![](https://upload.wikimedia.org/wikipedia/commons/0/0a/Laplace_pdf_mod.svg)
+   
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-04T03:04:40.543Z"
+updatedAt: "2016-12-04T03:35:51.200Z"

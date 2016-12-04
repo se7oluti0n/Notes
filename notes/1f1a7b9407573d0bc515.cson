@@ -9,6 +9,21 @@ content: '''
   **Inception v1** : Going Deeper with Convolutions 
   https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf
   
+  > This raises the question of whether there is any hope for
+  > a next, intermediate step: an architecture that makes use
+  > of filter-level sparsity, as suggested by the theory, but exploits
+  > our current hardware by utilizing computations on
+  > dense matrices. The vast literature on sparse matrix computations
+  > (e.g. [3]) suggests that clustering sparse matrices
+  > into relatively dense submatrices tends to give competitive
+  > performance for sparse matrix multiplication. It does not
+  > seem far-fetched to think that similar methods would be utilized
+  > for the automated construction of non-uniform deeplearning
+  > architectures in the near future.
+  
+  **Inception v2** : Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift
+  https://arxiv.org/abs/1502.03167
+  
   **Inception v3** Rethinking the Inception Architecture for Computer Vision
   https://arxiv.org/pdf/1512.00567v3.pdf
   
@@ -40,4 +55,4 @@ content: '''
 tags: []
 isStarred: false
 createdAt: "2016-12-02T10:55:41.053Z"
-updatedAt: "2016-12-02T11:58:27.498Z"
+updatedAt: "2016-12-04T05:26:08.335Z"
