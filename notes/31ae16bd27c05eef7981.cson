@@ -1,0 +1,14 @@
+type: "MARKDOWN_NOTE"
+folder: "ae84a30012aaf944361a"
+title: "Generative model"
+content: '''
+  Generative model
+  ================================
+  
+  ### variational encoder
+  http://int8.io/variational-autoencoder-in-tensorflow/
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-15T16:43:44.363Z"
+updatedAt: "2016-12-15T16:44:09.671Z"
