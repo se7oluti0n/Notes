@@ -1,0 +1,20 @@
+type: "MARKDOWN_NOTE"
+folder: "a3463f65b62cbd1e282c"
+title: "VNC through SSH"
+content: '''
+  VNC through SSH
+  =======================
+  #### Install X11VNC
+  ```bash
+  sudo apt-get install x11vnc
+  ```
+  #### SSH tunnel
+  ```bash
+  ssh user@remotehost -L 5900:locahost:5900 "x11vnc -display :0 -noxdamage"
+  ```
+  #### Open VNC client with localhost
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-10T09:17:37.861Z"
+updatedAt: "2016-12-10T09:19:36.926Z"
