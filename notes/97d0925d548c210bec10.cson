@@ -1,0 +1,17 @@
+type: "MARKDOWN_NOTE"
+folder: "ac8a9db237258addf866"
+title: "Dec 05"
+content: '''
+  Dec 05
+  =======================
+  
+  * Implementing Kalman Filter
+  
+  ### Question?
+  
+  Trường hợp vật bị che lấp hoàn toàn hoặc 1 phần lớn thì giải quyết thế nào ?
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-05T10:38:08.381Z"
+updatedAt: "2016-12-05T19:16:01.039Z"

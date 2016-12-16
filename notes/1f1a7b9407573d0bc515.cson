@@ -1,58 +1,54 @@
 type: "MARKDOWN_NOTE"
 folder: "ae84a30012aaf944361a"
-title: "Inception Net Research"
+title: "Inception v1"
 content: '''
-  Inception Net Research
-  ======================
+  Inception v1
+  ===================
+  ###   Motivation and Highlevel consideration
   
-  ## Papers
-  **Inception v1** : Going Deeper with Convolutions 
-  https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf
+  Cách dễ nhất để tăng performance của Deep Learning đó là tăng kích thước mạng, bao gồm cả số lớp và kích thước của mỗi lớp.
+  Tuy nhiên điều này có 2 nhược điểm
   
-  > This raises the question of whether there is any hope for
-  > a next, intermediate step: an architecture that makes use
-  > of filter-level sparsity, as suggested by the theory, but exploits
-  > our current hardware by utilizing computations on
-  > dense matrices. The vast literature on sparse matrix computations
-  > (e.g. [3]) suggests that clustering sparse matrices
-  > into relatively dense submatrices tends to give competitive
-  > performance for sparse matrix multiplication. It does not
-  > seem far-fetched to think that similar methods would be utilized
-  > for the automated construction of non-uniform deeplearning
-  > architectures in the near future.
+  * Kích thước lớn hơn thì đồng nghĩa với việc model dễ bị overfitting hơn, đặc biệt khi mà dữ liệu không có nhiều
+  * Đòi hỏi lượng tính toán nhiều hơn
   
-  **Inception v2** : Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift
-  https://arxiv.org/abs/1502.03167
+  Cách cơ bản để giải quyết vấn đề này là dùng ma trận thưa trong kiến trúc mạng.
+  Tuy nhiên phần cứng máy tính hiện nay không phù hợp lắm cho việc tính toán ma trận thưa.
   
-  **Inception v3** Rethinking the Inception Architecture for Computer Vision
-  https://arxiv.org/pdf/1512.00567v3.pdf
+  Điều này dẫn đến việc thiết kế kiến trúc mạng phải đáp ứng được 2 việc, sử dụng ma trận thưa trên phần cứng máy tính hiện nay.
   
-  Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning
-  https://arxiv.org/pdf/1602.07261v2.pdf
+  > The main idea of the Inception architecture is to consider
+  > how an optimal local sparse structure of a convolutional vision
+  > network can be approximated and covered by readily
+  > available dense components
   
-  An Analysis of Deep Neural Network Models for Practical Applications:
-  https://arxiv.org/abs/1605.07678
+  Ý tưởng chính của kiến trúc Inception là làm thế nào một kiến trúc tối ưu bằng ma trân thưa có thể được xấp xỉ và biểu diễn bởi các thành phần thông thường.
   
-  ## Blogs
-  Pseudofound
-  https://pseudoprofound.wordpress.com/
+  What is 1x1 convolution?
+  http://iamaaditya.github.io/2016/03/one-by-one-convolution/
+  https://www.quora.com/How-are-1x1-convolutions-used-for-dimensionality-reduction
   
-  Eugenio Culurciello's blog:
-  https://culurciello.github.io/
   
-  Neural Network Architectures :
-  https://culurciello.github.io/tech/2016/06/04/nets.html 
   
-  Andrej Karpathy blog:
-  http://karpathy.github.io/
+  Udacity explain:
+  https://www.youtube.com/watch?v=VxhSouuSZDY
+  http://vision.princeton.edu/courses/COS598/2015sp/slides/GoogLeNet/2014-10-17_dlrg.pdf
+  http://www.cs.toronto.edu/~guerzhoy/321/lec/W06/convnets.pdf
   
-  Machine Learning is Fun!:
-  https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471#.ylus0vj7e
+  **Khi dùng convolution, thì 1 layer có N feature maps sau khi nhân với 1 kernel kxk thì lại 
+  ra M features map, việc đó diễn ra thế nào**
   
-  A Return to Machine Learning
-  https://medium.com/@kcimc/a-return-to-machine-learning-2de3728558eb#.a7qsu0tec
+  Maybe : khi apply 1 convolution thì sẽ apply cho toàn bộ các layer. Ví dụ đầu vào có 3layer rgb thì sẽ apply kernel cho cả 3 layer đó.
+  
+  Chạy thử để kiểm tra graph của inception v3
+  Kiểm tra kiến trúc của Facenet
+  
+  ### Question??
+  #### How back-propagation work on these architectures?
 '''
-tags: []
+tags: [
+  "AI"
+]
 isStarred: false
 createdAt: "2016-12-02T10:55:41.053Z"
-updatedAt: "2016-12-04T05:26:08.335Z"
+updatedAt: "2016-12-08T09:00:37.827Z"

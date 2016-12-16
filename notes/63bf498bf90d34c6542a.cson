@@ -1,0 +1,13 @@
+type: "MARKDOWN_NOTE"
+folder: "ae84a30012aaf944361a"
+title: "Tips trick for when traing networks"
+content: '''
+  Tips trick for when traing networks
+  ===============================
+  
+  #### Set learning rate smaller when network get bigger
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-15T15:43:54.479Z"
+updatedAt: "2016-12-15T15:44:55.692Z"

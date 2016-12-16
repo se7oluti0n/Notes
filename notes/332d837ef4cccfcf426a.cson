@@ -1,0 +1,15 @@
+type: "MARKDOWN_NOTE"
+folder: "ae84a30012aaf944361a"
+title: "Generative Models"
+content: '''
+  Generative Models
+  =================
+  ## OpenAI
+  https://openai.com/blog/generative-models
+'''
+tags: [
+  "AI"
+]
+isStarred: false
+createdAt: "2016-12-08T08:58:53.210Z"
+updatedAt: "2016-12-08T09:00:18.692Z"

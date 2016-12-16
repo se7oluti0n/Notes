@@ -1,0 +1,31 @@
+type: "MARKDOWN_NOTE"
+folder: "ae84a30012aaf944361a"
+title: "Linear Algebra"
+content: '''
+  Linear Algebra
+  ===============
+  
+  ## Linear dependence and span
+  
+  Find solution of 
+  $$$
+    Ax = b
+  $$$
+  A is matrix of $$m \\times n$$, 
+  $$x \\in R^n$$
+  $$b \\in R^m$$
+  
+  ## Eigendecomposition
+  
+  Eigen vector
+  $$$
+  Av = \\lambda v
+  $$$
+  
+'''
+tags: [
+  "Statistic"
+]
+isStarred: false
+createdAt: "2016-12-07T10:47:53.210Z"
+updatedAt: "2016-12-08T09:00:56.327Z"

@@ -39,8 +39,16 @@ content: '''
   ra M features map, việc đó diễn ra thế nào**
   
   Maybe : khi apply 1 convolution thì sẽ apply cho toàn bộ các layer. Ví dụ đầu vào có 3layer rgb thì sẽ apply kernel cho cả 3 layer đó.
+  
+  Chạy thử để kiểm tra graph của inception v3
+  Kiểm tra kiến trúc của Facenet
+  
+  ### Question??
+  #### How back-propagation work on these architectures?
 '''
-tags: []
+tags: [
+  "AI"
+]
 isStarred: false
 createdAt: "2016-12-04T05:28:03.125Z"
-updatedAt: "2016-12-04T09:03:32.880Z"
+updatedAt: "2016-12-08T09:00:32.109Z"

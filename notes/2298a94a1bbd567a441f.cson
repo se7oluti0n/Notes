@@ -1,0 +1,17 @@
+type: "MARKDOWN_NOTE"
+folder: "ae84a30012aaf944361a"
+title: "ResNet"
+content: '''
+  ResNet
+  ======================
+  **residual**:/rɪˈzɪdjʊəl/
+  Tutorial on Deep Residual network
+  http://kaiminghe.com/icml16tutorial/icml2016_tutorial_deep_residual_networks_kaiminghe.pdf
+  
+  Presentation
+  https://www.youtube.com/watch?v=1PGLj-uKT1w
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-05T16:34:20.437Z"
+updatedAt: "2016-12-05T19:20:04.089Z"

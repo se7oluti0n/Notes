@@ -1,0 +1,15 @@
+type: "MARKDOWN_NOTE"
+folder: "eec99ecca9cfb3dd76ea"
+title: "Jupyter tornado error"
+content: '''
+  Jupyter tornado error
+  ==================
+  Downgrade to `Tornado 4.1`
+  ```bash
+  pip install tornado==4.1
+  ```
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-06T14:03:10.799Z"
+updatedAt: "2016-12-06T14:03:59.304Z"
