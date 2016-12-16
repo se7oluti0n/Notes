@@ -7,8 +7,15 @@ content: '''
   
   ### variational encoder
   http://int8.io/variational-autoencoder-in-tensorflow/
+  http://kvfrans.com/variational-autoencoders-explained/
+  
+  ### Generative Adversial Networks Explained
+  http://kvfrans.com/generative-adversial-networks-explained/
 '''
-tags: []
+tags: [
+  "AI"
+  "Generative"
+]
 isStarred: false
 createdAt: "2016-12-15T16:43:44.363Z"
-updatedAt: "2016-12-15T16:44:09.671Z"
+updatedAt: "2016-12-16T04:15:29.226Z"
