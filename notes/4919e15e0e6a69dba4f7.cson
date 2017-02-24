@@ -1,0 +1,16 @@
+type: "MARKDOWN_NOTE"
+folder: "ae84a30012aaf944361a"
+title: "New Architecture"
+content: '''
+  New Architecture
+  ======================
+  
+  ### 24/02/2017 Shake-Shake regularization of 3-branch residual networks to combat overfit
+  Based from ResNet, this architecture add random weights to branches
+  
+  ### Aggregated Residual Transformations for Deep Neural Networks (ResNeXt)
+'''
+tags: []
+isStarred: false
+createdAt: "2017-02-24T04:15:34.058Z"
+updatedAt: "2017-02-24T04:19:50.537Z"

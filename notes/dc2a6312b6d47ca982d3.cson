@@ -1,0 +1,16 @@
+type: "MARKDOWN_NOTE"
+folder: "a3463f65b62cbd1e282c"
+title: "Install domain on Ubuntu"
+content: '''
+  Install domain on Ubuntu
+  ========================
+  ### Error: ERROR_GEN_FAILURE [code 0x0000001f]
+  Fix
+  ```bash
+  sudo apt-get remove avahi-daemon
+  ```
+'''
+tags: []
+isStarred: false
+createdAt: "2016-12-16T02:53:18.356Z"
+updatedAt: "2016-12-16T02:54:15.701Z"
